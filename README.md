@@ -8,7 +8,7 @@ Allows you to open `SlotData.mpack`, edit data by section, and save it back to t
 > This project is not an official tool by the game developers.
 > Always keep a backup copy of your save.
 
-## What is it for?
+## What is it for? 
 
 Use this tool if you want to:
 - edit players, staff, and other data right from the save file;
@@ -50,7 +50,6 @@ Under the hood: MessagePack is unpacked → readable JSON → edited → packed 
 From your Save folder root:
 
 ```powershell
-cd script
 python -m pip install msgpack PySide6
 ```
 
@@ -59,14 +58,12 @@ python -m pip install msgpack PySide6
 Option 1 (recommended):
 
 ```powershell
-cd script
 python mpack_gui.py
 ```
 
 Option 2:
 
 ```powershell
-cd script
 start_mpack_gui.bat
 ```
 
@@ -158,7 +155,6 @@ Use at your own risk. The tool author is not responsible for save corruption.
 Из корня папки Save:
 
 ```powershell
-cd script
 python -m pip install msgpack PySide6
 ```
 
@@ -167,14 +163,12 @@ python -m pip install msgpack PySide6
 Вариант 1 (рекомендуется):
 
 ```powershell
-cd script
 python mpack_gui.py
 ```
 
 Вариант 2:
 
 ```powershell
-cd script
 start_mpack_gui.bat
 ```
 
