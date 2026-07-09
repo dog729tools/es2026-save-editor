@@ -113,7 +113,9 @@ def unpack_bytes(data: bytes) -> Any:
 
 
 def pack_value(value: Any) -> bytes:
-    return msgpack.packb(msgpack_safe(value), use_bin_type=True)
+    # Game data is predominantly float32; keeping that encoding avoids save bloat
+    # and preserves compatibility with original files. 
+    return msgpack.packb(msgpack_safe(value), use_bin_type=True, use_single_float=True)
 
 
 def unpack_file_to_json(source: Path, output: Path, *, indent: int = 2) -> None:
