@@ -301,8 +301,8 @@
           {
             "key": "4",
             "name": {
-              "en": "Skill 5",
-              "ru": "Навык 5"
+              "en": "Grenades",
+              "ru": "Гранаты"
             },
             "description": {
               "en": "",
@@ -312,8 +312,8 @@
           {
             "key": "5",
             "name": {
-              "en": "Skill 6",
-              "ru": "Навык 6"
+              "en": "Creativity",
+              "ru": "Креативность"
             },
             "description": {
               "en": "",
@@ -323,8 +323,8 @@
           {
             "key": "6",
             "name": {
-              "en": "Skill 7",
-              "ru": "Навык 7"
+              "en": "Clutch",
+              "ru": "Клатч"
             },
             "description": {
               "en": "",
@@ -334,8 +334,8 @@
           {
             "key": "7",
             "name": {
-              "en": "Skill 8",
-              "ru": "Навык 8"
+              "en": "Tactics",
+              "ru": "Тактика"
             },
             "description": {
               "en": "",
@@ -345,8 +345,8 @@
           {
             "key": "8",
             "name": {
-              "en": "Skill 9",
-              "ru": "Навык 9"
+              "en": "Leadership",
+              "ru": "Лидерство"
             },
             "description": {
               "en": "",
@@ -356,8 +356,8 @@
           {
             "key": "9",
             "name": {
-              "en": "Skill 10",
-              "ru": "Навык 10"
+              "en": "Teamplay",
+              "ru": "Командная игра" 
             },
             "description": {
               "en": "",
@@ -367,8 +367,8 @@
           {
             "key": "10",
             "name": {
-              "en": "Skill 11",
-              "ru": "Навык 11"
+              "en": "Morale",
+              "ru": "Мораль"
             },
             "description": {
               "en": "",
@@ -378,8 +378,8 @@
           {
             "key": "11",
             "name": {
-              "en": "Skill 12",
-              "ru": "Навык 12"
+              "en": "Conflict",
+              "ru": "Конфликтность"
             },
             "description": {
               "en": "",
@@ -389,8 +389,8 @@
           {
             "key": "12",
             "name": {
-              "en": "Skill 13",
-              "ru": "Навык 13"
+              "en": "Productivity",
+              "ru": "Продуктивность"
             },
             "description": {
               "en": "",
@@ -400,8 +400,8 @@
           {
             "key": "13",
             "name": {
-              "en": "Skill 14",
-              "ru": "Навык 14"
+              "en": "Stress Tolerance",
+              "ru": "Стрессоустойчивость"
             },
             "description": {
               "en": "",
@@ -411,8 +411,8 @@
           {
             "key": "14",
             "name": {
-              "en": "Skill 15",
-              "ru": "Навык 15"
+              "en": "Loyalty",
+              "ru": "Лояльность"
             },
             "description": {
               "en": "",
@@ -422,8 +422,8 @@
           {
             "key": "15",
             "name": {
-              "en": "Skill 16",
-              "ru": "Навык 16"
+              "en": "Reaction",
+              "ru": "Реакция"
             },
             "description": {
               "en": "",
@@ -433,8 +433,8 @@
           {
             "key": "16",
             "name": {
-              "en": "Skill 17",
-              "ru": "Навык 17"
+              "en": "Perception",
+              "ru": "Восприятие"
             },
             "description": {
               "en": "",
