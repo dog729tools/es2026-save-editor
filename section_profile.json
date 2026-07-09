@@ -1,0 +1,64 @@
+{
+  "section_titles": {
+    "1": "events",
+    "2": "mailbox",
+    "10": "players",
+    "11": "organizations",
+    "22": "staff_and_management",
+    "42": "financial_data",
+    "45": "embedded_file_manifest"
+  },
+  "field_aliases": {
+    "10": {
+      "field_0": "player_id",
+      "field_1": "nickname",
+      "field_2": "first_name",
+      "field_3": "last_name",
+      "field_5": "country",
+      "field_6": "team_id",
+      "field_9": "rating",
+      "field_10": "birthdate",
+      "field_11": "contract",
+      "field_14": "skills_history",
+      "field_15": "custom_image_id",
+      "field_18": "position_code",
+      "field_19": "lineup_order",
+      "field_20": "bio",
+      "field_22": "potential",
+      "field_23": "is_transfer_listed",
+      "field_27": "salary_value",
+      "field_40": "is_retired"
+    },
+    "11": {
+      "field_0": "team_id",
+      "field_1": "short_name",
+      "field_2": "full_name",
+      "field_3": "country",
+      "field_5": "description",
+      "field_9": "transfer_budget",
+      "field_14": "key_roster",
+      "field_15": "roster_members",
+      "field_16": "staff_members",
+      "field_18": "team_color"
+    },
+    "22": {
+      "field_0": "staff_id",
+      "field_1": "nickname",
+      "field_2": "first_name",
+      "field_3": "last_name",
+      "field_5": "country",
+      "field_6": "team_id",
+      "field_9": "rating",
+      "field_10": "birthdate",
+      "field_11": "contract",
+      "field_14": "skills_history",
+      "field_15": "custom_image_id"
+    },
+    "42": {
+      "__entry_key": "achievement_name",
+      "field_0": "state",
+      "field_1": "params"
+    },
+    "44": {}
+  }
+}

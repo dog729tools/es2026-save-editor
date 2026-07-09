@@ -1,0 +1,1326 @@
+[
+  {
+    "key": "10",
+    "code": "players",
+    "name": {
+      "en": "Players",
+      "ru": "Игроки"
+    },
+    "description": {
+      "en": "<div></div>",
+      "ru": "<div></div>"
+    },
+    "linked_cache": true,
+    "input": [
+      {
+        "alias": "player_id",
+        "type": "text",
+        "required": true,
+        "name": {
+          "en": "Player ID",
+          "ru": "ID игрока"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "nickname",
+        "type": "text",
+        "required": true,
+        "name": {
+          "en": "Nickname",
+          "ru": "Никнейм"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "first_name",
+        "type": "text",
+        "required": true,
+        "name": {
+          "en": "First Name",
+          "ru": "Имя"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "last_name",
+        "type": "text",
+        "required": true,
+        "name": {
+          "en": "Last Name",
+          "ru": "Фамилия"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "custom_image_id",
+        "type": "text",
+        "required": false,
+        "name": {
+          "en": "Custom Image ID",
+          "ru": "ID изображения"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "country",
+        "type": "text",
+        "required": true,
+        "name": {
+          "en": "Country",
+          "ru": "Страна"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "team_id",
+        "type": "text",
+        "required": true,
+        "name": {
+          "en": "Team ID",
+          "ru": "Команда"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "rating",
+        "type": "number",
+        "required": true,
+        "name": {
+          "en": "Rating",
+          "ru": "Рейтинг"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "birthdate",
+        "type": "datetime",
+        "required": true,
+        "name": {
+          "en": "Birthdate",
+          "ru": "Дата рождения"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "bio",
+        "type": "text",
+        "required": false,
+        "name": {
+          "en": "Biography",
+          "ru": "Описание"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "contract",
+        "type": "object",
+        "required": false,
+        "name": {
+          "en": "Contract",
+          "ru": "Контракт"
+        },
+        "description": {
+          "en": "",
+          "ru": "Важные поля контракта."
+        },
+        "fields": [
+          {
+            "key": "field_0", 
+            "alias": "is_active",
+            "type": "checkbox",
+            "required": false,
+            "name": {
+              "en": "Active",
+              "ru": "Активен контракт"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "field_1",
+            "alias": "contract_start",
+            "type": "datetime",
+            "required": false,
+            "name": {
+              "en": "Contract Start",
+              "ru": "Начало контракта"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "field_2",
+            "alias": "contract_end",
+            "type": "datetime",
+            "required": false,
+            "name": {
+              "en": "Contract End",
+              "ru": "Конец контракта"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "field_3",
+            "alias": "negotiation_date",
+            "type": "datetime",
+            "required": false,
+            "name": {
+              "en": "Negotiation Date",
+              "ru": "Переговоры"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "field_6",
+            "alias": "contract_nickname",
+            "type": "text",
+            "required": false,
+            "name": {
+              "en": "Contract Nickname",
+              "ru": "Никнейм"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "field_7",
+            "alias": "salary_timeline",
+            "type": "text",
+            "required": false,
+            "name": {
+              "en": "Salary Timeline (json)",
+              "ru": "Зарплата (json)"
+            },
+            "description": {
+              "en": "",
+              "ru": "Выплаты по месяцам."
+            }
+          }
+        ]
+      },
+      {
+        "alias": "skills_history",
+        "type": "skill_editor",
+        "required": true,
+        "name": {
+          "en": "Skills History",
+          "ru": "Навыки"
+        },
+        "description": {
+          "en": "",
+          "ru": "field_1..field_(end-1) как график, field_(end) редактируемый финал."
+        },
+        "options": [
+          {
+            "key": "0",
+            "name": {
+              "en": "Main Skill",
+              "ru": "Основной навык"
+            },
+            "description": {
+              "en": "",
+              "ru": "Общий навык"
+            }
+          },
+          {
+            "key": "1",
+            "name": {
+              "en": "AWP",
+              "ru": "AWP"
+            },
+            "description": {
+              "en": "",
+              "ru": "Снайперская игра"
+            }
+          },
+          {
+            "key": "2",
+            "name": {
+              "en": "Rifle",
+              "ru": "Винтовка"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "3",
+            "name": {
+              "en": "Pistol",
+              "ru": "Пистолет"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "4",
+            "name": {
+              "en": "Skill 5",
+              "ru": "Навык 5"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "5",
+            "name": {
+              "en": "Skill 6",
+              "ru": "Навык 6"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "6",
+            "name": {
+              "en": "Skill 7",
+              "ru": "Навык 7"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "7",
+            "name": {
+              "en": "Skill 8",
+              "ru": "Навык 8"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "8",
+            "name": {
+              "en": "Skill 9",
+              "ru": "Навык 9"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "9",
+            "name": {
+              "en": "Skill 10",
+              "ru": "Навык 10"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "10",
+            "name": {
+              "en": "Skill 11",
+              "ru": "Навык 11"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "11",
+            "name": {
+              "en": "Skill 12",
+              "ru": "Навык 12"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "12",
+            "name": {
+              "en": "Skill 13",
+              "ru": "Навык 13"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "13",
+            "name": {
+              "en": "Skill 14",
+              "ru": "Навык 14"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "14",
+            "name": {
+              "en": "Skill 15",
+              "ru": "Навык 15"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "15",
+            "name": {
+              "en": "Skill 16",
+              "ru": "Навык 16"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "16",
+            "name": {
+              "en": "Skill 17",
+              "ru": "Навык 17"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "17",
+            "name": {
+              "en": "Skill 18",
+              "ru": "Навык 18"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "18",
+            "name": {
+              "en": "Skill 19",
+              "ru": "Навык 19"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "19",
+            "name": {
+              "en": "Skill 20",
+              "ru": "Навык 20"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "22",
+    "code": "staff_and_management",
+    "name": {
+      "en": "Staff and Management",
+      "ru": "Персонал и руководство"
+    },
+    "description": {
+      "en": "",
+      "ru": ""
+    },
+    "linked_cache": true,
+    "input": [
+      {
+        "alias": "staff_id",
+        "type": "text",
+        "required": true,
+        "name": {
+          "en": "Staff ID",
+          "ru": "ID сотрудника"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "nickname",
+        "type": "text",
+        "required": false,
+        "name": {
+          "en": "Nickname",
+          "ru": "Никнейм"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "first_name",
+        "type": "text",
+        "required": true,
+        "name": {
+          "en": "First Name",
+          "ru": "Имя"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "last_name",
+        "type": "text",
+        "required": true,
+        "name": {
+          "en": "Last Name",
+          "ru": "Фамилия"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "country",
+        "type": "text",
+        "required": false,
+        "name": {
+          "en": "Country",
+          "ru": "Страна"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "team_id",
+        "type": "text",
+        "required": false,
+        "name": {
+          "en": "Team ID",
+          "ru": "Команда"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "rating",
+        "type": "number",
+        "required": false,
+        "name": {
+          "en": "Rating",
+          "ru": "Рейтинг"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "birthdate",
+        "type": "datetime",
+        "required": false,
+        "name": {
+          "en": "Birthdate",
+          "ru": "Дата рождения"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "contract",
+        "type": "object",
+        "required": false,
+        "name": {
+          "en": "Contract",
+          "ru": "Контракт"
+        },
+        "description": {
+          "en": "",
+          "ru": "Важные поля контракта."
+        },
+        "fields": [
+          {
+            "key": "field_0", 
+            "alias": "is_active",
+            "type": "checkbox",
+            "required": false,
+            "name": {
+              "en": "Active",
+              "ru": "Активен контракт"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "field_1",
+            "alias": "contract_start",
+            "type": "datetime",
+            "required": false,
+            "name": {
+              "en": "Contract Start",
+              "ru": "Начало контракта"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "field_2",
+            "alias": "contract_end",
+            "type": "datetime",
+            "required": false,
+            "name": {
+              "en": "Contract End",
+              "ru": "Конец контракта"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "field_3",
+            "alias": "negotiation_date",
+            "type": "datetime",
+            "required": false,
+            "name": {
+              "en": "Negotiation Date",
+              "ru": "Переговоры"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "field_6",
+            "alias": "contract_nickname",
+            "type": "text",
+            "required": false,
+            "name": {
+              "en": "Contract Nickname",
+              "ru": "Никнейм"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "field_7",
+            "alias": "salary_timeline",
+            "type": "text",
+            "required": false,
+            "name": {
+              "en": "Salary Timeline (json)",
+              "ru": "Зарплата (json)"
+            },
+            "description": {
+              "en": "",
+              "ru": "Выплаты по месяцам."
+            }
+          }
+        ]
+      },
+      {
+        "alias": "skills_history",
+        "type": "skill_editor",
+        "required": true,
+        "name": {
+          "en": "Skills History",
+          "ru": "Навыки"
+        },
+        "description": {
+          "en": "",
+          "ru": "field_1..field_(end-1) как график, field_(end) редактируемый финал."
+        },
+        "options": [
+          {
+            "key": "0",
+            "name": {
+              "en": "Skill 1",
+              "ru": "Навык 1"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "1",
+            "name": {
+              "en": "Skill 2",
+              "ru": "Навык 2"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "2",
+            "name": {
+              "en": "Skill 3",
+              "ru": "Навык 3"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "3",
+            "name": {
+              "en": "Skill 4",
+              "ru": "Навык 4"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "4",
+            "name": {
+              "en": "Skill 5",
+              "ru": "Навык 5"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "5",
+            "name": {
+              "en": "Skill 6",
+              "ru": "Навык 6"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "6",
+            "name": {
+              "en": "Skill 7",
+              "ru": "Навык 7"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "7",
+            "name": {
+              "en": "Skill 8",
+              "ru": "Навык 8"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "8",
+            "name": {
+              "en": "Skill 9",
+              "ru": "Навык 9"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "9",
+            "name": {
+              "en": "Skill 10",
+              "ru": "Навык 10"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "10",
+            "name": {
+              "en": "Skill 11",
+              "ru": "Навык 11"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "11",
+            "name": {
+              "en": "Skill 12",
+              "ru": "Навык 12"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "12",
+            "name": {
+              "en": "Skill 13",
+              "ru": "Навык 13"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "13",
+            "name": {
+              "en": "Skill 14",
+              "ru": "Навык 14"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "14",
+            "name": {
+              "en": "Skill 15",
+              "ru": "Навык 15"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "15",
+            "name": {
+              "en": "Skill 16",
+              "ru": "Навык 16"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "16",
+            "name": {
+              "en": "Skill 17",
+              "ru": "Навык 17"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "17",
+            "name": {
+              "en": "Skill 18",
+              "ru": "Навык 18"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "18",
+            "name": {
+              "en": "Skill 19",
+              "ru": "Навык 19"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "19",
+            "name": {
+              "en": "Skill 20",
+              "ru": "Навык 20"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "20",
+            "name": {
+              "en": "Skill 21",
+              "ru": "Навык 21"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "21",
+            "name": {
+              "en": "Skill 22",
+              "ru": "Навык 22"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "22",
+            "name": {
+              "en": "Skill 23",
+              "ru": "Навык 23"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "23",
+            "name": {
+              "en": "Skill 24",
+              "ru": "Навык 24"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "24",
+            "name": {
+              "en": "Skill 25",
+              "ru": "Навык 25"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "25",
+            "name": {
+              "en": "Skill 26",
+              "ru": "Навык 26"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "26",
+            "name": {
+              "en": "Skill 27",
+              "ru": "Навык 27"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "27",
+            "name": {
+              "en": "Skill 28",
+              "ru": "Навык 28"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "28",
+            "name": {
+              "en": "Skill 29",
+              "ru": "Навык 29"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "29",
+            "name": {
+              "en": "Skill 30",
+              "ru": "Навык 30"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "30",
+            "name": {
+              "en": "Skill 31",
+              "ru": "Навык 31"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "31",
+            "name": {
+              "en": "Skill 32",
+              "ru": "Навык 32"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "32",
+            "name": {
+              "en": "Skill 33",
+              "ru": "Навык 33"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "33",
+            "name": {
+              "en": "Skill 34",
+              "ru": "Навык 34"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "34",
+            "name": {
+              "en": "Skill 35",
+              "ru": "Навык 35"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "35",
+            "name": {
+              "en": "Skill 36",
+              "ru": "Навык 36"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "36",
+            "name": {
+              "en": "Skill 37",
+              "ru": "Навык 37"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          },
+          {
+            "key": "37",
+            "name": {
+              "en": "Skill 38",
+              "ru": "Навык 38"
+            },
+            "description": {
+              "en": "",
+              "ru": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "11",
+    "code": "organizations",
+    "name": {
+      "en": "Organizations",
+      "ru": "Организации"
+    },
+    "description": {
+      "en": "",
+      "ru": ""
+    },
+    "linked_cache": true,
+    "linked_context": {
+      "role": "organization",
+      "team_id_alias": "team_id"
+    },
+    "input": [
+      {
+        "alias": "team_id",
+        "type": "text",
+        "required": true,
+        "name": {
+          "en": "Team ID",
+          "ru": "ID команды"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "short_name",
+        "type": "text",
+        "required": true,
+        "name": {
+          "en": "Short Name",
+          "ru": "Короткое название"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "full_name",
+        "type": "text",
+        "required": true,
+        "name": {
+          "en": "Full Name",
+          "ru": "Полное название"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "country",
+        "type": "text",
+        "required": false,
+        "name": {
+          "en": "Country",
+          "ru": "Страна"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "description",
+        "type": "text",
+        "required": false,
+        "name": {
+          "en": "Description",
+          "ru": "Описание"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      {
+        "alias": "transfer_budget",
+        "type": "number",
+        "required": false,
+        "name": {
+          "en": "Transfer Budget",
+          "ru": "Бюджет на Трансфер"
+        },
+        "description": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      { 
+        "alias": "key_roster",
+        "type": "linked_slots",
+        "slot_count": 5,
+        "pick_from_org_alias": "roster_members",
+        "link": {
+          "source_section": "10",
+          "store_field": "field_0",
+          "match_fields": [
+            "field_0",
+            "field_1"
+          ],
+          "display_fields": [
+            "field_1",
+            "field_2",
+            "field_3"
+          ],
+          "team_field": "field_6"
+        },
+        "name": {
+          "en": "Key Members",
+          "ru": "Ключевые участники"
+        },
+        "description": {
+          "en": "",
+          "ru": "Настройка ключевых участников (принятые)."
+        }
+      },
+      {
+        "alias": "roster_members",
+        "type": "linked_slots",
+        "slot_count": 9,
+        "cleans_key_roster_alias": "key_roster",
+        "link": {
+          "source_section": "10",
+          "store_field": "field_0",
+          "match_fields": [
+            "field_0",
+            "field_1"
+          ],
+          "display_fields": [
+            "field_1",
+            "field_2",
+            "field_3"
+          ],
+          "team_field": "field_6",
+          "contract_field": "field_11"
+        },
+        "name": {
+          "en": "Roster Members",
+          "ru": "Участники"
+        },
+        "description": {
+          "en": "",
+          "ru": "Принятые участники (до 9)."
+        }
+      },
+      {
+        "alias": "staff_members",
+        "type": "linked_slots",
+        "slot_count": 6,
+        "link": {
+          "source_section": "22",
+          "store_field": "field_0",
+          "match_fields": [
+            "field_0",
+            "field_1"
+          ],
+          "display_fields": [
+            "field_1",
+            "field_2",
+            "field_3"
+          ],
+          "team_field": "field_6"
+        },
+        "name": {
+          "en": "Staff Members",
+          "ru": "Сотрудники"
+        },
+        "description": {
+          "en": "",
+          "ru": "Сотрудники команды (до 6)."
+        }
+      },
+      {
+        "alias": "team_color",
+        "type": "text",
+        "required": false,
+        "name": {
+          "en": "Team Color",
+          "ru": "Цвет команды"
+        },
+        "description": {
+          "en": "",
+          "ru": "HEX цвет, например #FF4500"
+        }
+      }
+    ]
+  }
+]

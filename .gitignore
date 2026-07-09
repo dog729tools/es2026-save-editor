@@ -1,0 +1,4 @@
+*.log
+/_debug
+/workdir
+config.json
